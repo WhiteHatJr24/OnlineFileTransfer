@@ -1,6 +1,8 @@
 <?php
 session_start();
 include('db.php');
+header("Access-Control-Allow-Origin: http://allowed-origin.com");
+header("Access-Control-Allow-Methods: POST");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $_POST['user_id'];
