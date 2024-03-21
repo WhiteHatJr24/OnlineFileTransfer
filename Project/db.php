@@ -13,6 +13,6 @@ if ($conn->connect_error) {
 }
 
 // Optionally, you can also set the default collation separately
-// $conn->query("SET collation_connection = 'utf8mb4_general_ci'");
+ $conn->query("SET collation_connection = 'utf8mb4_general_ci'");
 ?>
 
